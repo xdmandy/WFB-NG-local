@@ -41,7 +41,7 @@
 
 # Creating Services
 
-In your Raspi 5, go to `/etc/` and create a file `wifibroadcast.service`. Refer to the scripts given in the above repository. This is the main service that contains all the main link channel configurations and other troubleshooting solutions. This is the file to modify.
+In your Raspi 5, go to `/etc/` and create a file `wifibroadcast.cgf`. Refer to the scripts given in the above repository. This is the main service that contains all the main link channel configurations and other troubleshooting solutions. This is the file to modify.
 
 There are two services in `/etc/systemd/system/`:
 - `fpv-camera`: This is the drone-side service.
