@@ -47,19 +47,19 @@ Generate a key using the command below:
 ```bash
 wfb_keygen
 ```
-<button onclick="navigator.clipboard.writeText('wfb_keygen')">Copy</button>
+<button onclick="navigator.clipboard.writeText('wfb_keygen')"></button>
 
 Run this command to copy from GCS (you should be on the same network as GCS):
 ```bash
 scp pi@ip-of-gcs:/etc/drone.key /home/yourusername/path-to-folder
 ```
-<button onclick="navigator.clipboard.writeText('scp pi@ip-of-gcs:/etc/drone.key /home/yourusername/path-to-folder')">Copy</button>
+<button onclick="navigator.clipboard.writeText('scp pi@ip-of-gcs:/etc/drone.key /home/yourusername/path-to-folder')"></button>
 
 To paste to the drone:
 ```bash
 scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/
 ```
-<button onclick="navigator.clipboard.writeText('scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/')">Copy</button>
+<button onclick="navigator.clipboard.writeText('scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/')"></button>
 
 ---
 
@@ -68,6 +68,6 @@ scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/
 sudo wfb-cli drone
 sudo wfb-cli gs
 ```
-<button onclick="navigator.clipboard.writeText('sudo wfb-cli drone\nsudo wfb-cli gs')">Copy</button>
+<button onclick="navigator.clipboard.writeText('sudo wfb-cli drone\nsudo wfb-cli gs')"></button>
 
 In `/etc/wifibroadcast.cfg`, check `channel` and `link_set`; they should be the same. Then check the status of all services.
