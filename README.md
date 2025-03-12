@@ -1,5 +1,3 @@
-# Wfb-ng-on-rpi5
-Under Testing Using and building wfb-ng on rpi5 for drone side for wifi packet injection and reciving 
 # Building WFB from source with wfb-ng
 
 ## Created by and main project [wfb-ng](https://github.com/svpcom/wfb-ng)
@@ -20,9 +18,24 @@ Under Testing Using and building wfb-ng on rpi5 for drone side for wifi packet i
   make && make check
   sudo make install
   ```
-  <button onclick="navigator.clipboard.writeText('git clone https://github.com/jedisct1/libsodium --branch stable\ncd libsodium\n./configure\nmake && make check\nsudo make install')">Copy</button>
+  <button onclick="navigator.clipboard.writeText('git clone https://github.com/jedisct1/libsodium --branch stable\ncd libsodium\n./configure\nmake && make check\nsudo make install')"></button>
 
-- Install wfb from [this link](apt.wfb-ng.org)
+- Install wfb from [this link](apt.wfb-ng.org):
+  ```bash
+  # Install wfb-ng release-25.01:
+  curl -s https://apt.wfb-ng.org/public.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/wfb-ng.gpg
+  echo "deb [signed-by=/usr/share/keyrings/wfb-ng.gpg] https://apt.wfb-ng.org/ $(lsb_release -cs) release-25.01" | sudo tee /etc/apt/sources.list.d/wfb-ng.list
+  sudo apt update
+  sudo apt install wfb-ng
+  
+  # Install wfb-ng from master branch:
+  curl -s https://apt.wfb-ng.org/public.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/wfb-ng.gpg
+  echo "deb [signed-by=/usr/share/keyrings/wfb-ng.gpg] https://apt.wfb-ng.org/ $(lsb_release -cs) master" | sudo tee /etc/apt/sources.list.d/wfb-ng.list
+  sudo apt update
+  sudo apt install wfb-ng
+  ```
+  <button onclick="navigator.clipboard.writeText('curl -s https://apt.wfb-ng.org/public.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/wfb-ng.gpg\necho \"deb [signed-by=/usr/share/keyrings/wfb-ng.gpg] https://apt.wfb-ng.org/ $(lsb_release -cs) release-25.01\" | sudo tee /etc/apt/sources.list.d/wfb-ng.list\nsudo apt update\nsudo apt install wfb-ng\n\n# Install wfb-ng from master branch:\ncurl -s https://apt.wfb-ng.org/public.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/wfb-ng.gpg\necho \"deb [signed-by=/usr/share/keyrings/wfb-ng.gpg] https://apt.wfb-ng.org/ $(lsb_release -cs) master\" | sudo tee /etc/apt/sources.list.d/wfb-ng.list\nsudo apt update\nsudo apt install wfb-ng')"></button>
+
 - Then follow [SETUP-HOWTO](https://github.com/svpcom/wfb-ng/wiki/Setup-HOWTO)
 
 ---
@@ -59,7 +72,7 @@ To paste to the drone:
 ```bash
 scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/
 ```
-<button onclick="navigator.clipboard.writeText('scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/')"></button>
+<button onclick="navigator.clipboard.writeText('scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/')">Copy</button>
 
 ---
 
