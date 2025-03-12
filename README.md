@@ -48,7 +48,7 @@
   sudo apt update
   sudo apt install wfb-ng
   ```
-  <button onclick="navigator.clipboard.writeText('curl -s https://apt.wfb-ng.org/public.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/wfb-ng.gpg\necho \"deb [signed-by=/usr/share/keyrings/wfb-ng.gpg] https://apt.wfb-ng.org/ $(lsb_release -cs) release-25.01\" | sudo tee /etc/apt/sources.list.d/wfb-ng.list\nsudo apt update\nsudo apt install wfb-ng\n\n# Install wfb-ng from master branch:\ncurl -s https://apt.wfb-ng.org/public.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/wfb-ng.gpg\necho \"deb [signed-by=/usr/share/keyrings/wfb-ng.gpg] https://apt.wfb-ng.org/ $(lsb_release -cs) master\" | sudo tee /etc/apt/sources.list.d/wfb-ng.list\nsudo apt update\nsudo apt install wfb-ng')"></button>
+  
 
 - Then follow [SETUP-HOWTO](https://github.com/svpcom/wfb-ng/wiki/Setup-HOWTO)
 
