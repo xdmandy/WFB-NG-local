@@ -82,13 +82,13 @@ Run this command to copy from GCS (you should be on the same network as GCS):
 ```bash
 scp pi@ip-of-gcs:/etc/drone.key /home/yourusername/path-to-folder
 ```
-<button onclick="navigator.clipboard.writeText('scp pi@ip-of-gcs:/etc/drone.key /home/yourusername/path-to-folder')">Copy</button>
+<button onclick="navigator.clipboard.writeText('scp pi@ip-of-gcs:/etc/drone.key /home/yourusername/path-to-folder')"></button>
 
 To paste to the drone:
 ```bash
 scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/
 ```
-<button onclick="navigator.clipboard.writeText('scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/')">Copy</button>
+<button onclick="navigator.clipboard.writeText('scp /home/yourusername/path-to-file pi@ip-of-drone:/etc/')"></button>
 
 ---
 
