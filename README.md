@@ -7,7 +7,7 @@
 ### Community [link/wfb-ng-support](https://t.me/wfb-ng)
 
 ---
-
+## These are commands I searched and ran and got everything in one place 
 # Getting Started for rpi 5
 
 ## Installing Dependencies
