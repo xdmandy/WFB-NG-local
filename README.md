@@ -1,4 +1,4 @@
-# Building WFB from source with wfb-ng
+# Building WFBon raspi 5 from source with wfb-ng
 
 ## Created by and main project [wfb-ng](https://github.com/svpcom/wfb-ng)
 
