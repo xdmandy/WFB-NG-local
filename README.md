@@ -1,6 +1,6 @@
 # Building WFB-NG from source locally on your UBUNTU system
 
-## Created by and main project [wfb-ng](https://github.com/svpcom/wfb-ng)
+## Created by Vasily aka SVPCOM and main project [wfb-ng](https://github.com/svpcom/wfb-ng)
 
 ### Link to [rpi-zero2w-image 25.01](https://github.com/svpcom/wfb-ng/releases/download/wfb-ng-25.01/wfb-ng_25.01-rpi3.img.gz)
 
