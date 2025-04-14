@@ -1,4 +1,4 @@
-# Building WFB0-NG from source locally on your UBUNTU system
+# Building WFB-NG from source locally on your UBUNTU system
 
 ## Created by and main project [wfb-ng](https://github.com/svpcom/wfb-ng)
 
@@ -23,7 +23,7 @@
   # For both:
   sudo ./dkms-install.sh
   ```
-  <button onclick="navigator.clipboard.writeText('sudo apt-get install dkms <br> # For 8812au:\ngit clone -b v5.2.20 https://github.com/svpcom/rtl8812au.git\ncd rtl8812au/\n# For 8812eu:\ngit clone -b v5.15.0.1 https://github.com/svpcom/rtl8812eu.git\ncd rtl8812eu/\n# For both:\nsudo ./dkms-install.sh')"></button>
+  <button onclick="navigator.clipboard.writeText('sudo apt-get install dkms # For 8812au:\ngit clone -b v5.2.20 https://github.com/svpcom/rtl8812au.git\ncd rtl8812au/\n# For 8812eu:\ngit clone -b v5.15.0.1 https://github.com/svpcom/rtl8812eu.git\ncd rtl8812eu/\n# For both:\nsudo ./dkms-install.sh')"></button>
 
 - ```bash
   git clone https://github.com/jedisct1/libsodium --branch stable
@@ -57,7 +57,7 @@
 # Creating Services
 
 Although after installing wfb-ng basic file of wifibrodcast.cfg and it's service in /etc/systemd/system should be created but if not created 
-follow below steps \n
+follow below steps <br>
 In your Raspi 5, go to `/etc/` and create a file if this file is not present `wifibroadcast.cgf`. Refer to the scripts given in the above repository. This is the main service that contains all the main link channel configurations and other troubleshooting solutions. This is the file to modify.
 
 There are two services in `/etc/systemd/system/`:
