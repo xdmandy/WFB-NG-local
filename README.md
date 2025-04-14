@@ -56,9 +56,8 @@
 
 # Creating Services
 
-Although after installing wfb-ng basic file of wifibrodcast.cfg and it's service in /etc/systemd/system should be created but if not created 
-follow below steps <br>
-In your Raspi 5, go to `/etc/` and create a file if this file is not present `wifibroadcast.cgf`. Refer to the scripts given in the above repository. This is the main service that contains all the main link channel configurations and other troubleshooting solutions. This is the file to modify.
+We have to create a cfg over main cfg to make changes according to user requriments so make a configuration file in both side as follows below <br>
+In your Raspi 5, go to `/etc/` and create a file if this file is not present `wifibroadcast.cfg`. Refer to the scripts given in the above repository. This is the main service that contains all the main link channel configurations and other troubleshooting solutions. This is the file to modify.
 
 There are two services in `/etc/systemd/system/`:
 - `fpv-camera`: This is the drone-side service.
