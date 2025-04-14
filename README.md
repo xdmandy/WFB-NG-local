@@ -96,7 +96,7 @@ After installing wfb-ng and all other dependencies, you should have two files in
 - `wifibroadcast@drone`
 - `wifibroadcast@gs`
 
-These services need to be started for broadcasting. If these services are empty, update them in this folder.
+These services need to be started for broadcasting. By below commands
 
 For the **drone side**, run:
 ```bash
