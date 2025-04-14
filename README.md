@@ -50,7 +50,7 @@
   ```
   
 
-- Then follow [SETUP-HOWTO](https://github.com/svpcom/wfb-ng/wiki/Setup-HOWTO)
+- Then follow [SETUP-HOWTO](https://github.com/svpcom/wfb-ng/wiki/Setup-HOWTO) if your using BL-8812eu modules there is a special setup you need to else just read and skip to next part 
 
 ---
 
