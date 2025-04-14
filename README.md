@@ -1,4 +1,4 @@
-# Building WFBon raspi 5 from source with wfb-ng
+# Building WFB on raspi 5 from source with wfb-ng
 
 ## Created by and main project [wfb-ng](https://github.com/svpcom/wfb-ng)
 
@@ -123,3 +123,24 @@ But if you have flashed SD cards with image then just run above commands in resp
 ### Default Image Passwords:
 - **For Pi Zero 2W**: `pi@raspberry`
 - **For Radxa**: `rock@rock`
+
+<h3>🔧 TROUBLESHOOT</h3>
+
+<p>If you're getting a problem in setting the link, try the following settings:</p>
+
+<ol>
+  <li>Go to the WiFi configuration file located in <code>/etc/</code> by running:
+    <pre><code>sudo nano /etc/wifibroadcast.cfg</code></pre>
+    <button onclick="navigator.clipboard.writeText('sudo nano /etc/wifibroadcast.cfg')">📋 Copy</button>
+  </li>
+
+  <li>In that file, set the following values on <strong>both</strong> the <strong>drone</strong> and <strong>GCS</strong> side:
+    <pre><code>stbc = 0
+ldpc = 0</code></pre>
+  </li>
+
+  <li>Then run the wifibroadcast services again and check if the link appears.</li>
+</ol>
+
+<blockquote><strong>Note:</strong> If the link is established after doing this, the issue might be with your WiFi card. Some non-authentic AU cards often cause this problem.</blockquote>
+
