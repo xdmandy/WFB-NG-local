@@ -116,7 +116,7 @@ sudo reboot
 ```
 <button onclick="navigator.clipboard.writeText('sudo systemctl enable wifibroadcast@gs\nsudo systemctl enable rtsp\nsudo systemctl enable fpv-video\nsudo systemctl enable osd\nsudo reboot')"></button>
 
-You should get your output on GCS. These commands can be run on RPi5 as GCS as well, but services need to be set up properly.
+You should get your output on GCS. These commands can be run on local ubuntu system as GCS as well, but services need to be set up properly.
 But if you have flashed SD cards with image then just run above commands in respective sides and it will configure itself and start broadcasting 
 
 ### Default Image Passwords:
