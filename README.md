@@ -1,4 +1,4 @@
-# Building WFB on raspi 5 from source with wfb-ng
+# Building WFB0-NG from source locally on your UBUNTU system
 
 ## Created by and main project [wfb-ng](https://github.com/svpcom/wfb-ng)
 
@@ -8,7 +8,7 @@
 
 ---
 ## These are commands I searched and ran and got everything in one place 
-# Getting Started for rpi 5
+# Getting Started for your local system
 
 ## Installing Dependencies
 - Install patched RTL8812AU or RTL8812EU driver:
