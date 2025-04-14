@@ -131,7 +131,7 @@ But if you have flashed SD cards with image then just run above commands in resp
 <ol>
   <li>Go to the WiFi configuration file located in <code>/etc/</code> by running:
     <pre><code>sudo nano /etc/wifibroadcast.cfg</code></pre>
-    <button onclick="navigator.clipboard.writeText('sudo nano /etc/wifibroadcast.cfg')">📋 Copy</button>
+    <button onclick="navigator.clipboard.writeText('sudo nano /etc/wifibroadcast.cfg')"></button>
   </li>
 
   <li>In that file, set the following values on <strong>both</strong> the <strong>drone</strong> and <strong>GCS</strong> side:
