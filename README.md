@@ -23,7 +23,7 @@
   # For both:
   sudo ./dkms-install.sh
   ```
-  <button onclick="navigator.clipboard.writeText('sudo apt-get install dkms\n# For 8812au:\ngit clone -b v5.2.20 https://github.com/svpcom/rtl8812au.git\ncd rtl8812au/\n# For 8812eu:\ngit clone -b v5.15.0.1 https://github.com/svpcom/rtl8812eu.git\ncd rtl8812eu/\n# For both:\nsudo ./dkms-install.sh')"></button>
+  <button onclick="navigator.clipboard.writeText('sudo apt-get install dkms <br> # For 8812au:\ngit clone -b v5.2.20 https://github.com/svpcom/rtl8812au.git\ncd rtl8812au/\n# For 8812eu:\ngit clone -b v5.15.0.1 https://github.com/svpcom/rtl8812eu.git\ncd rtl8812eu/\n# For both:\nsudo ./dkms-install.sh')"></button>
 
 - ```bash
   git clone https://github.com/jedisct1/libsodium --branch stable
