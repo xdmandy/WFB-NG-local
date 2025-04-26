@@ -143,3 +143,33 @@ ldpc = 0</code></pre>
 
 <blockquote><strong>Note:</strong> If the link is established after doing this, the issue might be with your WiFi card. Some non-authentic AU cards often cause this problem.</blockquote>
 
+<h1>USB Camera Pipeline</h1>
+<p>A generic GStreamer pipeline for USB cameras using hardware H.264 encoding (Raspberry Pi).</p>
+
+<h2>Pipeline Code</h2>
+<pre><code class="language-bash">gst-launch-1.0 v4l2src device=/dev/video0 ! "video/x-raw,width=640,height=480,framerate=30/1" ! videoconvert ! v4l2h264enc ! "video/x-h264,level=(string)4" ! h264parse disable-passthrough=true ! rtph264pay config-interval=1 pt=96 mtu=1400 aggregate-mode=zero-latency ! udpsink host=127.0.0.1 port=5602 sync=false</code></pre>
+
+<h2>Usage Notes</h2>
+<ol>
+  <li>
+    <strong>Camera Resolution Check</strong>:<br>
+    Before running the pipeline, verify your camera's supported resolutions with:<br>
+    <pre><code class="language-bash">v4l2-ctl --all --device /dev/videoX</code></pre>
+    Replace <code>X</code> with your camera's device number (e.g., <code>video0</code>).
+  </li>
+  <li>
+    <strong>Hardware H.264 Encoding</strong>:<br>
+    This pipeline uses <code>v4l2h264enc</code> (Raspberry Pi's hardware encoder).
+  </li>
+  <li>
+    <strong>Performance Note</strong>:<br>
+    <ul>
+      <li>Currently uses <code>videoconvert</code> (CPU usage ~60%).</li>
+      <li><em>Potential Optimization</em>: Replacing <code>videoconvert</code> with <code>v4l2convert</code> may reduce CPU usage but may cause CAPS errors (needs testing).</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Example Output</h2>
+<pre><code class="language-plaintext">Setting pipeline to PLAYING...
+New clock: GstSystemClock</code></pre>
