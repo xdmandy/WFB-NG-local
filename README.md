@@ -166,10 +166,8 @@ ldpc = 0</code></pre>
     <ul>
       <li>Currently uses <code>videoconvert</code> (CPU usage ~60%).</li>
       <li><em>Potential Optimization</em>: Replacing <code>videoconvert</code> with <code>v4l2convert</code> may reduce CPU usage but may cause CAPS errors (needs testing).</li>
+      <li>While Pasting this into fpv-camera service add single quotes(') where ever there is bracket else the kernel will through error at opening brackets.</li>
     </ul>
   </li>
 </ol>
 
-<h2>Example Output</h2>
-<pre><code class="language-plaintext">Setting pipeline to PLAYING...
-New clock: GstSystemClock</code></pre>
