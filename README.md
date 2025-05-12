@@ -134,6 +134,12 @@ But if you have flashed SD cards with image then just run above commands in resp
 
 <h3>🔧 TROUBLESHOOT</h3>
 
+###MAIN Commands For troubleshooting 
+```bash 
+wfb-cli drone #for Drone
+wfb-cli gs #for ground station 
+```
+
 <p>If you're getting a problem in setting the link, try the following settings:</p>
 
 <ol>
