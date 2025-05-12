@@ -11,6 +11,15 @@
 # Getting Started for your local system
 
 ## Installing Dependencies
+  ```bash 
+  # Dependencies 
+  $  apt-get install build-essential
+  $ apt-get install bc
+  $ apt-get install libelf-dev
+  $ apt-get install linux-headers-`uname -r`
+  
+  ``` 
+
 - Install patched RTL8812AU or RTL8812EU driver:
   ```bash
   sudo apt-get install dkms
